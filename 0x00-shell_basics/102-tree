@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 007 hello
+cmkdir welcome/ welcome/to welcome/to/school
