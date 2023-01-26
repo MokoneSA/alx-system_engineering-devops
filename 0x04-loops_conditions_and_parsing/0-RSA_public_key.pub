@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
+# This is the ssh public key created
+# using the PuTTy Key Generator 
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTjK0PzD68VewXXq5WunksxFIxG0suGcnH5hTFDTIOsVJc+uUWV+uj9qRmMGPndSmB+5tA9YW1JmQ/EMFWyo043N+b/xDhXecG1iMUZclSfeO2ZmsUGssnYYM5bna7ig/3s078T8kRWAePTt9CUeCMBl18aEG5FPPNOg7XPuLJYdb2wsSBjiOT1Onjla8MJf5XQLVk+Qe1whQwgAXaEH9R+/74TFN
