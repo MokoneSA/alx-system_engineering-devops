@@ -1,4 +1,2 @@
 # Execute a command
-exec { 'pkill killmenow':
-  command => 'usr/bin/pkill killmenow'
-}
+exec{'kill script': command=>'usr/bin/pkill killmenow'}
