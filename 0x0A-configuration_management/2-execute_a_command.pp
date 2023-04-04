@@ -1,2 +1,5 @@
 # Execute a command
-exec{'kill script': command=>'usr/bin/pkill killmenow'}
+exec{'kill': 
+  command => 'usr/bin/pkill killmenow',
+  path    => ['/usr/bin', /usr/sbin']
+}
