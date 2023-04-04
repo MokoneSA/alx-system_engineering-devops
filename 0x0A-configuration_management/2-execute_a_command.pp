@@ -1,5 +1,5 @@
 # Execute a command
-exec{'pkill': 
+exec{'pkill':
   command   => 'pkill killmenow',
   provider => 'shell',
 }
