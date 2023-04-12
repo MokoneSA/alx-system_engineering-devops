@@ -2,4 +2,4 @@
 # Run apache on designated container
 
 echo 'Hello Holberton' > /var/www/html/index.html
-service apache start
+sudo service apache2 start
