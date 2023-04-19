@@ -3,9 +3,14 @@
 
 sudo apt-get update
 sudo apt-get install -y nginx
-
-echo "Hello World!" | sudo tee /var/www/html/index.html
-string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https://www.github.com/MokoneSA  permanent;"
-sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+sudo ufw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.html
+SERVER_CONFIG=\
+"server {
+    listen 80;
+    server_name https://www.github.com/MokoneSA;
+    return 301 http://simonlephoto.tech;
+}"
+bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 
 sudo service nginx restart
